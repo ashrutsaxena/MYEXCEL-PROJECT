@@ -1,0 +1,109 @@
+body{
+    margin :0;
+    overflow: hidden;
+    font-size: 14;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+}
+.title-bar{
+    height:5vh;
+    background-color: #107c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.menu-bar{
+    height:5vh;
+    background-color: #107c41;
+    display: flex;
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+.menu-item:hover{
+    background-color: #0c5e31;
+    cursor: pointer;
+}
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+.menu-icon-bar{
+    height: 6vh;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+}
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu-icon:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.selector option:hover{
+    background-color: lightgrey;
+}
+.font-family-selector{
+    height: 30px;
+    font-size: 18px;
+    width: 150px;
+}
+.font-size-selector{
+    height: 30px;
+    font-size: 18px;
+}
+.selector option{
+    font-size: 18px;
+}
+.formula-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: rgb(241, 241, 241);
+}
+.data-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+}
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgrey;
+    display: flex;
+    overflow: hidden;
+}
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgrey;
+    overflow: hidden;
+}
+.input-cell-container{
+    width: calc(100vw - 30px);
